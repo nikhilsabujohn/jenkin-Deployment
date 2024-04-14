@@ -21,9 +21,9 @@ public class Controller {
 	private Services services;
 	
 	@GetMapping("/nik")
-	public ResponseEntity<String> good()
+	public String good()
 	{
-		return ResponseEntity.status(HttpStatus.ACCEPTED).body("nik u got it maga");
+		return "nik u got it maga";
 	}
 
 	@GetMapping("/smartphones")
