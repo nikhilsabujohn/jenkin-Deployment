@@ -20,6 +20,12 @@ public class Controller {
 	@Autowired
 	private Services services;
 	
+	@GetMapping("/nik")
+	public String nik()
+	{
+		return "u got it maga";
+	}
+
 	@GetMapping("/smartphones")
 	public ResponseEntity<List<SmartPhones>> getAllPhones()
 	{
